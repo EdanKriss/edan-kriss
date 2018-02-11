@@ -331,7 +331,7 @@ footer {
 
 #lead {
     position: relative;
-    height: 90vh;
+    height: 100vh;
     // min-height: 300px;
     // max-height: 1080px;
     background: url(../public/images/lead-bg.jpg);
@@ -1079,6 +1079,10 @@ footer {
 
 // Extra Small Devices
 @media only screen and (max-width : 440px) {
+
+    #lead {
+        height: 91vh;
+    }
 
     header {
         position: fixed;
