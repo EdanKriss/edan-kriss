@@ -1081,7 +1081,21 @@ footer {
 @media only screen and (max-width : 440px) {
 
     #lead {
-        height: 91vh;
+        height: 90vh;
+        // #lead-content {
+        //     h1 {
+        //         font-size: 1.5em;
+        //     }
+    
+        //     h2 {
+        //         font-size: 1em;
+        //     }
+    
+        //     a {
+        //         font-size: 0.9em;
+        //         padding: 5px 10px;
+        //     }
+        // }
     }
 
     header {
@@ -1110,20 +1124,6 @@ footer {
         }
     }
 
-    #lead-content {
-        h1 {
-            font-size: 1.5em;
-        }
-
-        h2 {
-            font-size: 1em;
-        }
-
-        a {
-            font-size: 0.9em;
-            padding: 5px 10px;
-        }
-    }
     #about {
         h2 {
             padding-top: 0;
