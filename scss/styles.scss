@@ -1082,46 +1082,17 @@ footer {
 
     #lead {
         height: 90vh;
-        // #lead-content {
-        //     h1 {
-        //         font-size: 1.5em;
-        //     }
-    
-        //     h2 {
-        //         font-size: 1em;
-        //     }
-    
-        //     a {
-        //         font-size: 0.9em;
-        //         padding: 5px 10px;
-        //     }
-        // }
-    }
-
-    header {
-        position: fixed;
-        display: none;
-        z-index: 999;
-        animation: none;
-        bottom: 0;
-        height: 100%;
-    }
-
-    #mobile-menu-open, #mobile-menu-close {
-        display: block;
+        #lead-content {
+            width: 80vw;
+            a {
+                font-size: 0.7em;
+                padding: 5px 10px;
+            }
+        }
     }
 
     #menu {
-        height: 100%;
-        overflow-y: auto;
-        box-shadow: none;
-        border-radius: 0;
-        width: 100%;
-
-        li {
-            display: block;
-            margin-bottom: 10px;
-        }
+        font-size: 0.9rem;
     }
 
     #about {
