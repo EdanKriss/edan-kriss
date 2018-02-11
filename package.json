@@ -1,23 +1,28 @@
 {
-  "name": "redux-simple-starter",
+  "name": "edan-kriss-spa",
   "version": "1.0.0",
-  "description": "Simple starter package for Redux with React and Babel support",
+  "description": "",
   "main": "index.js",
-  "repository": "git@github.com:StephenGrider/ReduxSimpleStarter.git",
+  "repository": "",
   "scripts": {
     "postinstall": "webpack -p",
     "start": "node server.js",
     "dev": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
+    "watch": "gulp watch",
     "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test",
     "test:watch": "npm run test -- --watch"
   },
-  "author": "",
+  "author": "Edan Kriss",
   "license": "ISC",
   "devDependencies": {
     "jsdom": "^8.1.0",
     "mocha": "^2.4.5",
     "react-addons-test-utils": "^0.14.7",
-    "webpack-dev-server": "^1.14.0"
+    "webpack-dev-server": "^1.14.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^3.1.0"
   },
   "dependencies": {
     "babel-core": "^6.2.1",

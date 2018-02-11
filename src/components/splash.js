@@ -7,14 +7,14 @@ export default class Splash extends Component {
                 <div id="lead-content">
                     <h1>Edan Kriss</h1>
                     <h2>Longtime Software Enthusiast</h2>
-                    <a href="#" class="btn-rounded-white">My Responsive Portfolio</a>
+                    <a href="#" className="btn-rounded-white">My Responsive Portfolio</a>
                 </div>
 
                 <div id="lead-overlay"></div>
 
                 <div id="lead-down">
                     <span>
-                        <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                        <i className="fa fa-chevron-down" aria-hidden="true"></i>
                     </span>
                 </div>
             </div>
