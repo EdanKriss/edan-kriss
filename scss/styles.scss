@@ -362,7 +362,8 @@ footer {
     }
 
     h2 {
-        color: lighten($base-color, 25%);
+        color: #8adffe;
+        // color: lighten($base-color, 25%);
         font-weight: 500;
         font-size: 2.25em;
         margin-bottom: 15px;
@@ -377,7 +378,8 @@ footer {
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba($base-color-hover, 0.8);
+    background: rgba(40,140,247, 0.6);
+    // background: rgba($base-color-hover, 0.8);
     z-index: 1;
 }
 
@@ -392,7 +394,7 @@ footer {
     color: #fff;
 
     span {
-        cursor: pointer;
+        // cursor: pointer;
         display: block;
         margin: 0 auto;
         width: 35px;

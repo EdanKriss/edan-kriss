@@ -5,7 +5,7 @@ export default (props) => {
         <div id="lead">
             <div id="lead-content">
                 <h1>Edan Kriss</h1>
-                <h2>Longtime Software Enthusiast</h2>
+                <h2>Enthusiast Web Developer</h2>
                 <div className="btn-rounded-white">My Responsive Portfolio</div>
             </div>
 
