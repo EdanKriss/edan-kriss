@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Pepsi from './pepsi';
 
 const code = 'import {Edan} from "people";\n' +
@@ -19,19 +19,17 @@ const code = 'import {Edan} from "people";\n' +
     '    Learn.developProjects(projects);\n' +
 '};\n';
 
-export default class About extends Component {
-    render() {
-        return (
-            <div id="about">
-                <div className="container">
-                    <div className="row">
-                        <h2 className="heading">About Me</h2><br />
-                        <pre id="kode"><code>{code}</code></pre>
-                        <img id="edan" src="../../public/images/edan.jpg" />
-                        <Pepsi />
-                    </div>
+export default (props) => {
+    return (
+        <div id="about">
+            <div className="container">
+                <div className="row">
+                    <h2 className="heading">About Me</h2><br />
+                    <pre id="kode"><code>{code}</code></pre>
+                    <img id="edan" src="../../public/images/edan.jpg" />
+                    <Pepsi />
                 </div>
             </div>
-        );
-    }
+        </div>
+    );
 }

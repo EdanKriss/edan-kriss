@@ -434,6 +434,7 @@ footer {
     text-align: center;
     padding: 75px 15px;
     border-bottom: 1px solid $border;
+    min-height: 100vh;
     #kode {
         display: inline-block;
         border: 0;
@@ -478,8 +479,10 @@ footer {
     padding: 50px 15px;
     text-align: center;
     border-bottom: 1px solid $border;
+    background-color: $background-alt;
 
     h2 {
+        margin-top: 5rem;
         color: $heading;
     }
 }
@@ -600,21 +603,21 @@ footer {
         }
     }
 }
-#udemy, #edx {
+#udemy, #mitx, #stackskills {
     display: block;
     margin: auto;
     max-width: 75%;
 }
-#stackskills {
-    display: block;
-    margin: auto;
-    #stackskillsIcon {
-        max-width: 23%;
-    }
-    #stackskillsText {
-        max-width: 67%;
-    }
-}
+// #stackskills {
+//     display: block;
+//     margin: auto;
+//     #stackskillsIcon {
+//         max-width: 23%;
+//     }
+//     #stackskillsText {
+//         max-width: 67%;
+//     }
+// }
 .course {
     .panel-body {
         min-height: 100px;
@@ -706,6 +709,7 @@ footer {
     padding: 50px 15px;
     border-bottom: 1px solid $border;
     text-align: center;
+    padding-top: 12rem;
 
     h2 {
         color: $heading;
@@ -770,6 +774,7 @@ footer {
 #skills {
     padding: 50px 15px;
     text-align: center;
+    margin-top: 6rem;
 
     h2 {
         color: $heading;
