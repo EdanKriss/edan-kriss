@@ -23,6 +23,7 @@ ReactDOM.render(
 			<div>
 				<Nav />
 				<Switch>
+					<Route path="/contact" component={()=>{return (<div id="contactSpacer"><br/><br/><br/></div>);}}/>
 					<Route path="/projects" component={Projects} />					
 					<Route path="/skills" component={Skills} />
 					<Route path="/learning" component={Learning} />

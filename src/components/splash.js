@@ -6,7 +6,7 @@ export default (props) => {
             <div id="lead-content">
                 <h1>Edan Kriss</h1>
                 <h2>Longtime Software Enthusiast</h2>
-                <a href="#" className="btn-rounded-white">My Responsive Portfolio</a>
+                <div className="btn-rounded-white">My Responsive Portfolio</div>
             </div>
 
             <div id="lead-overlay"></div>

@@ -283,11 +283,11 @@ footer {
     border-radius: 30px;
     @include transition();
 
-    &:hover {
-        color: $base-color;
-        background: #fff;
-        text-decoration: none;
-    }
+    // &:hover {
+    //     color: $base-color;
+    //     background: #fff;
+    //     text-decoration: none;
+    // }
 }
 
 .shadow {
@@ -806,6 +806,10 @@ footer {
     -------------------------------
 */
 
+#contactSpacer {
+    background: $base-color;
+}
+
 #contact {
     padding: 50px 15px;
     background: $base-color;
@@ -1037,13 +1041,9 @@ footer {
             font-size: 1.3em;
         }
 
-        a {
+        div {
             padding: 10px 20px;
         }
-    }
-
-    #lead-down {
-        display: none;
     }
 
     #about #edan {
@@ -1089,8 +1089,8 @@ footer {
         height: 90vh;
         #lead-content {
             width: 80vw;
-            a {
-                font-size: 0.7em;
+            div {
+                font-size: 0.75em;
                 padding: 5px 10px;
             }
         }
