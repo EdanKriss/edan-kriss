@@ -1,25 +1,23 @@
-# ReduxSimpleStarter
-
-Interested in learning [Redux](https://www.udemy.com/react-redux/)?
-
 ### Getting Started
 
-There are two methods for getting started with this repo.
+This project currently requires Node.js version 8, because Gulp, which is used to compile SCSS to CSS, breaks with Node 10.
+It is not simply enough to use Node 8 for this step while building the project with another node version, because some of the binaries will break.
 
-#### Familiar with Git?
-Checkout this repo, install dependencies, then start the gulp process with the following:
+Thus, it is recommended to use Node for all steps, until the project is fully migrated from Gulp to Webpack.
 
+To build project:
 ```
-> git clone https://github.com/StephenGrider/ReduxSimpleStarter.git
-> cd ReduxSimpleStarter
-> npm install
-> npm start
+// install dependencies and build webpack bundle
+$ npm install 
+// compile SCSS
+$ npm run gulp
 ```
 
-#### Not Familiar with Git?
-Click [here](https://github.com/StephenGrider/ReactStarter/releases) then download the .zip file.  Extract the contents of the zip file, then open your terminal, change to the project directory, and:
-
+Notes on dev server: 
+javascript changes will automatically rebuild and show changes in browser, but SCSS 
+changes will only automatically rebuild, but require browser refresh
+To run dev server, run these commands in separate terminals:
 ```
-> npm install
-> npm start
+$ npm run dev
+$ npm run watch
 ```
