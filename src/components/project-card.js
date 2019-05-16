@@ -9,7 +9,10 @@ export default (props) => {
             <div className="project-info">
                 <h3>{props.projectName}</h3>
                 <p>{props.projectInfo}</p>
-                <a href={props.projectLink}>View Project</a>
+                <span 
+                    className="linkNewTab"
+                    onClick={()=>{window.open(props.projectLink)}}
+                >View Project</span>
             </div>
         </div>
     );

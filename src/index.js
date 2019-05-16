@@ -14,7 +14,7 @@ import Learning from "./components/learning";
 import Nav from "./components/nav";
 import Footer from "./components/footer";
 import reducers from './reducers';
-console.log(process.env.NODE_ENV);
+
 const createStoreWithMiddleware = applyMiddleware()(createStore);
 
 ReactDOM.render(

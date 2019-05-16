@@ -2,7 +2,8 @@ import React from 'react';
 
 export default (props) => {
     return (
-        <a href={props.courseLink}>
+        <span onClick={()=>{window.open(props.courseLink)}}>
+        {/* <a href={props.courseLink}> */}
             <div className="course col-md-4 col-xs-6">
                 <div className="panel panel-info">
                     <img className="course-image" src={props.courseImg} alt="" />
@@ -19,6 +20,6 @@ export default (props) => {
                     </div>
                 </div>
             </div>
-        </a>
+        </span>
     );
 }
