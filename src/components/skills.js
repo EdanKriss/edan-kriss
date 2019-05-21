@@ -3,7 +3,7 @@ import React from 'react';
 export default (props) => {
     return (
         <div id="skills">
-            <h2 class="heading">Core Technologies</h2>
+            <h2 className="heading">Core Technologies</h2>
             <ul>
                 <li>JavaScript</li>
                 <li>React</li>
@@ -22,7 +22,7 @@ export default (props) => {
                 <li>AWS</li>
             </ul>
             <br/><br/>
-            <h2 class="heading">Protocols</h2>
+            <h2 className="heading">Protocols</h2>
             <ul>
                 <li>TCP</li>
                 <li>UDP</li>
@@ -38,7 +38,7 @@ export default (props) => {
                 <li>LDAP</li>
             </ul>
             <br/><br/>
-            <h2 class="heading">Some Exposure</h2>
+            <h2 className="heading">Some Exposure</h2>
             <ul>
                 <li>Android Studio</li>
                 <li>Java</li>
