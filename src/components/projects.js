@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+
 import ProjectCard from "./project-card.js";
 
 class Projects extends Component {

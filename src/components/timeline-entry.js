@@ -2,12 +2,9 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import CourseCard from './course-card';
 
-var platform = "";
-
 class TimelineEntry extends Component {
     constructor(props) {
         super(props);
-        platform = this.props.platform;
     }
 
     renderRow() {
@@ -26,9 +23,13 @@ class TimelineEntry extends Component {
     }
 
     render() {
+        const platform = this.props.platform;
+        const logo = this.props.logo;
+
         if (!this.props.courses) {
             return (<h1>Loading...</h1>);
         }
+
         return (
             <div className="vtimeline-point">
                 <div className="vtimeline-icon">
@@ -37,7 +38,7 @@ class TimelineEntry extends Component {
                 <div className="vtimeline-block">
                     <div className="vtimeline-content">
                         <a href={"#"+platform+"Collapse"} data-toggle="collapse">
-                            <img id={platform} src={"./public/images/learning/"+platform+"-logo.png"} />
+                            <img id={platform} src={logo} />
                             <span className="glyphicon glyphicon-menu-down"></span>
                         </a>
                         <br/>

@@ -1,4 +1,6 @@
 import React from 'react';
+
+import EdanAvatar from '../../public/images/edan.jpg';
 import Pepsi from './pepsi';
 
 const code = 'import {Edan} from "people";\n' +
@@ -26,7 +28,7 @@ export default (props) => {
                 <div className="row">
                     <h2 className="heading">About Me</h2><br />
                     <pre id="kode"><code>{code}</code></pre>
-                    <img id="edan" src="../../public/images/edan.jpg" />
+                    <img id="edan" src={EdanAvatar} />
                     <Pepsi />
                 </div>
             </div>

@@ -6,6 +6,15 @@ import { createStore, applyMiddleware } from 'redux';
 // Route component sets component that renders only at url
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
+// this was the only way I could get jquery and boostrap to work together
+// every other way ended with boostrap placed first in bundle
+global.jQuery = require('../libs/jquery-3.2.1.min.js');
+require('../libs/bootstrap.min.js');
+import '../libs/font-awesome/css/font-awesome.min.css';
+
+import '../scss/styles.scss';
+import '../css/anim.css';
+import 'file-loader?name=[name].[ext]!../index.html';
 import Splash from "./components/splash";
 import Projects from "./components/projects";
 import Skills from "./components/skills";

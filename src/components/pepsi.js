@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 
+import pepsiImg from '../../public/images/pepsi.png';
+
 export default class Pepsi extends Component {
     renderPepsi() {
         // var Wrap="url('https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRKJZK82tdIUdmhZMHQFYKFHUm9u3stm8vyijQSx3Te9qEgrC7VDV0fmYw-iw')-";
-        var Wrap ="url('../../public/images/pepsi.png')-";
+        var Wrap =`url(${pepsiImg})-`;
         var coverURLs = [];
         var rotorDegrees = [];
         var d = 0;
