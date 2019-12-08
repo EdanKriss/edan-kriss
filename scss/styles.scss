@@ -178,6 +178,7 @@ header {
 }
 
 #menu {
+    font-size: 2rem;
     &.active {
         display: block;
     }
@@ -302,7 +303,7 @@ footer {
 
     position: relative;
     display: inline-block;
-    font-size: 2em;
+    font-size: 4rem;
     font-weight: 300;
     margin: 0 0 30px 0;
 
@@ -1036,18 +1037,9 @@ footer {
     //     display: block;
     // }
 
-    // #menu {
-    //     height: 100%;
-    //     overflow-y: auto;
-    //     box-shadow: none;
-    //     border-radius: 0;
-    //     width: 100%;
-
-    //     li {
-    //         display: block;
-    //         margin-bottom: 10px;
-    //     }
-    // }
+    #menu {
+        font-size: 1.7rem;
+    }
 
     #lead-content {
         h1 {
@@ -1114,7 +1106,7 @@ footer {
     }
 
     #menu {
-        font-size: 0.9rem;
+        font-size: 1.4rem;
     }
 
     #about {
