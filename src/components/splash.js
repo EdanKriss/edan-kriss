@@ -12,12 +12,6 @@ export default (props) => {
             </div>
 
             <div id="lead-overlay"></div>
-
-            <div id="lead-down">
-                <span onClick={() => { window.scrollTo({ top: document.body.scrollHeight, left: 0, behavior: "smooth" }); }}>
-                    <i className="fa fa-chevron-down" aria-hidden="true"></i>
-                </span>
-            </div>
         </div>
     );
 }

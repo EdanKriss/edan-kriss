@@ -2,11 +2,17 @@ import React, { Component } from 'react';
 
 export default class Footer extends Component {
     render() {
-        const onContactTab = window.location.pathname === "/contact";
         return (
             <div id="remove-fade-in-1dot5s" className="fade-in-1dot5s">
-                <div id="contactSpacer"><br/><br/><br/></div>
-                
+                <div id="contactSpacer">
+                    <div id="lead-down">
+                        <span onClick={() => { window.scrollTo({ top: document.body.scrollHeight, left: 0, behavior: "smooth" }); }}>
+                            <i className="fa fa-chevron-down" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <br/><br/><br/>
+                </div>
+
                 <div id="contact">
                     <h2>Get in Touch</h2>
                     <div id="contact-form">

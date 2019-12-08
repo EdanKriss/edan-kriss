@@ -382,30 +382,36 @@ footer {
 }
 
 #lead-down {
-    position: absolute;
-    left: 0;
-    right: 0;
+//     position: absolute;
+//     left: 0;
+//     right: 0;
     width: 100%;
     text-align: center;
     z-index: 10;
-    bottom: 15px;
+    // bottom: 15px;
+    padding-top: 1vh;
+    // bottom: 0;
     color: #fff;
 
     span {
         // cursor: pointer;
         display: block;
         margin: 0 auto;
-        width: 35px;
-        height: 35px;
+        // width: 35px;
+        // height: 35px;
+        width: 4vh;
+        height: 4vh;
         border-radius: 50%;
         border: 3px solid lighten($base-color, 25%);
         text-align:center;
     }
 
     i {
+        font-size: medium;
         animation: pulsate 1.5s ease;
         animation-iteration-count: infinite;
-        padding-top: 5px;;
+        padding-top: .6vh;
+        // padding-top: 5px;
     }
 }
 
@@ -434,7 +440,7 @@ footer {
     text-align: center;
     padding: 75px 15px;
     border-bottom: 1px solid $border;
-    min-height: 100vh;
+    min-height: 94vh;
     #kode {
         display: inline-block;
         border: 0;
@@ -476,6 +482,7 @@ footer {
 */
 
 #experience {
+    min-height: 94vh;
     padding: 50px 15px;
     text-align: center;
     border-bottom: 1px solid $border;

@@ -30,16 +30,14 @@ import './canvas.js';
 const createStoreWithMiddleware = applyMiddleware()(createStore);
 
 window.renderReact = () => {
-	const onContactTab = window.location.pathname === "/contact";
 	ReactDOM.render(
 		<Provider store={createStoreWithMiddleware(reducers)}>
 			<BrowserRouter>
 				<div>
 					<Nav />
 					<Switch>
-						<Route path="/contact" component={()=><div></div>}/>
-						{/* <Route path="/contact" component={()=>{return <div></div>}}/> */}
-						<Route path="/projects" component={Projects} />					
+						<Route path="/contact" component={() => <div></div>} />
+						<Route path="/projects" component={Projects} />
 						<Route path="/skills" component={Skills} />
 						<Route path="/learning" component={Learning} />
 						<Route path="/about" component={About} />
@@ -49,5 +47,24 @@ window.renderReact = () => {
 				</div>
 			</BrowserRouter>
 		</Provider>
-	, document.querySelector('.holder'))
+		, document.querySelector('.holder')
+	);
 };
+
+const space = document.getElementById('floatyspace');
+space.addEventListener('animationend', (event) => {
+	console.log(event, 'animationend event: '+new Date().toTimeString());
+	if (event.animationName === 'fadeOut') {
+		if (
+			space.classList.contains('fade-out-dot7s') ||
+			space.classList.contains('fade-out-1s') ||
+			space.classList.contains('fade-out-1dot5s')
+		) {
+			space.style.display = 'none';
+			window.renderReact();
+			space.classList.remove('fade-out-dot7s');
+			space.classList.remove('fade-out-1s');
+			space.classList.remove('fade-out-1dot5s');
+		}
+	}
+});

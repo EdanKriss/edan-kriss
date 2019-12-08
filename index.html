@@ -28,28 +28,18 @@
                   dest="about" 
                   onclick="(()=>{
                     const space = document.getElementById('floatyspace');
-                    space.classList.add('fade-out-1dot5s');
-                    setTimeout(()=>{
-                      space.style.display = 'none';
-                      window.renderReact();
-                      space.classList.remove('fade-out-1dot5s');
-                    }, 1000);
+                    space.classList.add('fade-out-dot7s');
                 })()"
               >My Projects <i class="mdi mdi-arrow-right rot360"></i>
               </div>
               
               <div 
-                  class="button page-link pop-in-1dot5s delay-2dot5s" 
+                  class="button page-link pop-in-1dot3s delay-2dot5s" 
                   dest="about"
                   onclick="(()=>{
                     window.history.pushState(null, '', '/contact');
                     const space = document.getElementById('floatyspace');
-                    space.classList.add('fade-out-1dot5s');
-                    setTimeout(()=>{
-                      space.style.display = 'none';
-                      window.renderReact();
-                      space.classList.remove('fade-out-1dot5s');
-                    }, 1000);
+                    space.classList.add('fade-out-dot7s');
                 })()"
               >Contact Me <i class="mdi mdi-arrow-right rot90"></i>
               </div>

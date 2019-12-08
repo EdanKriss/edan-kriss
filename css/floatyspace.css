@@ -181,6 +181,9 @@ a {
     color: inherit;
 }
 
+.fade-out-dot7s {
+    animation: fadeOut 0.7s ease both;
+}
 .fade-out-1s {
     animation: fadeOut 1s ease both;
 }
@@ -199,10 +202,10 @@ a {
 }
 
 .pop-in-1s {
-    animation: popIn 1s both;
+    animation: popIn 1s ease backwards;
 }
-.pop-in-1dot5s {
-    animation: popIn 1.6s both;
+.pop-in-1dot3s {
+    animation: popIn 1.3s ease backwards;
 }
 
 .delay-1s {
