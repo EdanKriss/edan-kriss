@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import { Link } from 'react-router-dom';
 
 export default (props) => {
@@ -13,7 +14,17 @@ export default (props) => {
                 </div>
                 <ul id="menu" className="shadow">
                     <li>
-                        <Link to="/">Home</Link>
+                        {/* <Link to="/">Home</Link> */}
+                        <a onClick={()=>{
+                            ReactDOM.unmountComponentAtNode(document.querySelector('.holder'));
+                            window.history.pushState(null, '', '/');
+                            const space = document.getElementById('floatyspace');
+                            space.style.display = 'flex';
+                            space.classList.add('fade-in-1dot5s');
+                            setTimeout(()=>{
+                                space.classList.remove('fade-in-1dot5s');
+                            }, 1000);
+                        }}>Home</a>
                     </li>
                     <li>
                         <Link to="/about">About</Link>

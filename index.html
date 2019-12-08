@@ -14,6 +14,48 @@
     <!-- <link rel="stylesheet" href="/css/anim.css"> -->
   </head>
   <body>
+      <section id="floatyspace" class="flex height-fix" style="visibility: hidden;">
+          <div id="pt" class="canvas"></div>
+          <div class="flex">
+              <div class="text fade-in-2s delay-1s">
+                  Hello, I'm <span class="highlight">Edan</span>.
+                  <br/>
+                  I'm a full-stack web developer.
+              </div>
+
+              <div 
+                  class="button page-link pop-in-1s delay-2dot5s" 
+                  dest="about" 
+                  onclick="(()=>{
+                    const space = document.getElementById('floatyspace');
+                    space.classList.add('fade-out-1dot5s');
+                    setTimeout(()=>{
+                      space.style.display = 'none';
+                      window.renderReact();
+                      space.classList.remove('fade-out-1dot5s');
+                    }, 1000);
+                })()"
+              >My Projects <i class="mdi mdi-arrow-right rot360"></i>
+              </div>
+              
+              <div 
+                  class="button page-link pop-in-1dot5s delay-2dot5s" 
+                  dest="about"
+                  onclick="(()=>{
+                    window.history.pushState(null, '', '/contact');
+                    const space = document.getElementById('floatyspace');
+                    space.classList.add('fade-out-1dot5s');
+                    setTimeout(()=>{
+                      space.style.display = 'none';
+                      window.renderReact();
+                      space.classList.remove('fade-out-1dot5s');
+                    }, 1000);
+                })()"
+              >Contact Me <i class="mdi mdi-arrow-right rot90"></i>
+              </div>
+          </div>
+      </section>
+
     <div class="holder"></div>
   </body>
   <script src="./bundle.js"></script>
