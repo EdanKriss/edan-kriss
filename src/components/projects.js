@@ -5,7 +5,7 @@ import ProjectCard from "./project-card.js";
 
 class Projects extends Component {
     renderProjects() {
-        return this.props.projects.map((project) => {
+        return this.props.projects.map((project, index) => {
             return (
                 <ProjectCard
                     key={project.projectName}
@@ -13,6 +13,7 @@ class Projects extends Component {
                     projectLink={project.projectLink}
                     projectImg={project.projectImg}
                     projectInfo={project.projectInfo}
+                    index={index}
                 />
             );
         });
