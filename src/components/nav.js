@@ -16,7 +16,9 @@ export default (props) => {
                     <li>
                         {/* <Link to="/">Home</Link> */}
                         <a onClick={()=>{
+                            document.body.style.overflowY = 'hidden';
                             ReactDOM.unmountComponentAtNode(document.querySelector('.holder'));
+                            window.scrollTo({ top: 0, left: 0 });
                             window.history.pushState(null, '', '/');
                             const space = document.getElementById('floatyspace');
                             space.style.display = 'flex';

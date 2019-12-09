@@ -53,7 +53,7 @@ window.renderReact = () => {
 
 const space = document.getElementById('floatyspace');
 space.addEventListener('animationend', (event) => {
-	console.log(event, 'animationend event: '+new Date().toTimeString());
+	console.debug(event, 'animationend event: '+new Date().toTimeString());
 	if (event.animationName === 'fadeOut') {
 		if (
 			space.classList.contains('fade-out-dot7s') ||
@@ -61,6 +61,7 @@ space.addEventListener('animationend', (event) => {
 			space.classList.contains('fade-out-1dot5s')
 		) {
 			space.style.display = 'none';
+			window.scrollTo({ top: 0, left: 0 });
 			window.renderReact();
 			space.classList.remove('fade-out-dot7s');
 			space.classList.remove('fade-out-1s');

@@ -43,7 +43,7 @@
     }
 }
 
-/* @keyframes flipInX {
+@keyframes flipInX {
     from {
         -webkit-transform: perspective(400px) rotateY(90deg);
         transform: perspective(400px) rotateY(90deg);
@@ -75,7 +75,16 @@
         transform: perspective(400px);
         opacity: 1;
     }
-} */
+}
+.flip-in-x-dot8s {
+    animation: flipInX .8s ease both;
+}
+.flip-in-x-1dot5s {
+    animation: flipInX 1.5s ease both;
+}
+.flip-in-x-2s {
+    animation: flipInX 2s ease both;
+}
 
 /* @keyframes popDown {
     0% {
@@ -226,7 +235,7 @@ body {
     font-size: 8pt;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .canvas {
@@ -321,10 +330,6 @@ section .button:hover .rot360 {
     section .button {
         padding: 12px 50px 12px 20px;
     }
-
-    /* section .button .mdi {
-        top: 16px;
-    } */
 }
 
 @media screen and (min-width: 960px) {
