@@ -1,9 +1,28 @@
 import React, { Component } from 'react';
 
 export default class Footer extends Component {
+    componentDidMount() {
+        console.log("footer did mount");
+        const footer = document.getElementById('footer');
+        footer.addEventListener('animationend', (event) => {
+            console.debug(event, 'FOOTER animationend event: '+new Date().toTimeString());
+            if (event.animationName === 'fadeIn') {
+                if (
+                    footer.classList.contains('fade-in-dot7s') ||
+                    footer.classList.contains('fade-in-1s') ||
+                    footer.classList.contains('fade-in-1dot5s')
+                ) {
+                    footer.classList.remove('fade-in-dot7s');
+                    footer.classList.remove('fade-in-1s');
+                    footer.classList.remove('fade-in-1dot5s');
+                }
+            }
+        });
+    }
+
     render() {
         return (
-            <div id="remove-fade-in-1dot5s" className="fade-in-1dot5s">
+            <div id="footer" className="fade-in-1dot5s">
                 <div id="contactSpacer">
                     <div id="lead-down">
                         <span onClick={() => { window.scrollTo({ top: document.body.scrollHeight, left: 0, behavior: "smooth" }); }}>

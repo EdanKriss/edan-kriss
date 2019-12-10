@@ -83,8 +83,11 @@ setTimeout(()=>{
     floatyspace.classList.remove('fade-in-1dot5s');
 }, 1000);
 
-// $(window).resize(function(){
-//   space.removeAll();
-//   $('canvas').remove();
-//   floatySpace();
-// });
+function resetFloatySpace() {
+    space.removeAll();
+    document.getElementById('canvas').remove();
+    floatySpace();
+}
+window.resetFloatySpace = resetFloatySpace;
+
+window.addEventListener("resize", resetFloatySpace);

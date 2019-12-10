@@ -23,6 +23,7 @@ export default (props) => {
                             const space = document.getElementById('floatyspace');
                             space.style.display = 'flex';
                             space.classList.add('fade-in-1dot5s');
+                            window.resetFloatySpace();
                             setTimeout(()=>{
                                 space.classList.remove('fade-in-1dot5s');
                             }, 1000);
