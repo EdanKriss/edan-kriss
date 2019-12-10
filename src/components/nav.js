@@ -42,7 +42,9 @@ export default (props) => {
                         <Link to="/projects">Projects</Link>
                     </li>
                     <li>
-                        <Link to="/contact">Contact</Link>
+                        <Link to="/contact" onClick={()=>{
+                            document.getElementById("footer").classList.add("fade-in-1dot5s");
+                        }}>Contact</Link>
                     </li>
                 </ul>
             </header>

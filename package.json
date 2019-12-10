@@ -8,8 +8,8 @@
     "postinstall": "webpack -p",
     "webpack-cdn": "webpack -p --env.ASSET_PATH=http://localhost:8089/assets/",
     "start": "node server.js",
-    "dev": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
-    "dev2": "webpack-dev-server --config ./webpack.config.js --mode development"
+    "dev": "webpack-dev-server --config ./webpack.config.js --mode development",
+    "dev2": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js"
   },
   "author": "Edan Kriss",
   "license": "ISC",
