@@ -32,9 +32,9 @@ export default (props) => {
                     <li>
                         <Link to="/about">About</Link>
                     </li>
-                    <li>
+                    {/* <li>
                         <Link to="/learning">Learning</Link>
-                    </li>
+                    </li> */}
                     <li>
                         <Link to="/skills">Skills</Link>
                     </li>
