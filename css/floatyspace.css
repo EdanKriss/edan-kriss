@@ -203,11 +203,11 @@ a {
     animation: fadeOut 2s ease both;
 }
 
+.fade-in-1s {
+    animation: fadeIn 1s ease both;
+}
 .fade-in-1dot5s {
     animation: fadeIn 1.5s ease both;
-}
-.fade-in-2s {
-    animation: fadeIn 2s ease both;
 }
 
 .pop-in-1s {
@@ -245,7 +245,6 @@ body {
     width: 100vw;
     height: 100%;
     background: url("../public/images/floaty_space_filler.png") center center/cover;
-    /* background: url("http://findmatthew.com/style/../img/filler.png") center center/cover; */
 }
 
 .button {

@@ -30,13 +30,17 @@ export default (props) => {
                         }}>Home</a>
                     </li>
                     <li>
-                        <Link to="/about">About</Link>
+                        <Link to="/about" onClick={()=>{
+                            document.getElementById("footer").classList.add("fade-in-1dot5s");
+                        }}>About</Link>
                     </li>
                     {/* <li>
                         <Link to="/learning">Learning</Link>
                     </li> */}
                     <li>
-                        <Link to="/skills">Skills</Link>
+                        <Link to="/skills" onClick={()=>{
+                            document.getElementById("footer").classList.add("fade-in-1dot5s");
+                        }}>Skills</Link>
                     </li>
                     <li>
                         <Link to="/projects">Projects</Link>

@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <!-- <link rel="stylesheet" href="/css/styles.css"> -->
-    <!-- <link rel="stylesheet" href="/css/anim.css"> -->
+    <!-- <link rel="stylesheet" href="/css/pepsi.css"> -->
   </head>
   <body>
       <section id="floatyspace" class="flex height-fix" style="visibility: hidden;">
@@ -25,8 +25,8 @@
 
               <div 
                   class="button page-link pop-in-1s delay-2dot5s" 
-                  dest="about" 
                   onclick="(()=>{
+                    window.history.pushState(null, '', '/about');
                     const space = document.getElementById('floatyspace');
                     space.classList.add('fade-out-dot7s');
                     document.body.style.overflowY = 'scroll';
@@ -36,7 +36,6 @@
               
               <div 
                   class="button page-link pop-in-1dot3s delay-2dot5s" 
-                  dest="about"
                   onclick="(()=>{
                     window.history.pushState(null, '', '/contact');
                     const space = document.getElementById('floatyspace');

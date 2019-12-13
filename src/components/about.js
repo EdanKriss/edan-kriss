@@ -1,37 +1,33 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 import EdanAvatar from '../../public/images/edan.jpg';
-import Pepsi from './pepsi';
+// import Pepsi from './pepsi';
+import splashBackground from '../../public/images/lead-bg.jpg';
 
-const code = 'import {Edan} from "people";\n' +
-'import {Learn} from "Person";\n' +
-'Edan.job = "Not what he loves";\n\n' +
+export default class About extends Component {
+    componentDidMount() {
+        console.log("About did mount");
+        const about = document.getElementById('about');
+        footer.addEventListener('animationend', (event) => {
+            if (event.animationName === 'fadeIn') {
+                if (footer.classList.contains('fade-in-1s')) {
+                    footer.classList.remove('fade-in-1s');
+                }
+            }
+        });
+    }
 
-'while (Edan.job !== "Developer") {\n' +
-    '    solidifySkills(Edan.courses, Edan.projects);\n' +
-    '    Edan.pursueCareer("Developer");\n' +
-'};\n\n' +
-
-'function solidifySkills (courses, projects) {\n' +
-    '    if (Edan.newIdea) {\n' +
-        '        Edan.projects.push(Edan.newIdea);\n' +
-        '        Edan.newIdea = null;\n' +
-    '    };\n' +   
-    '    Learn.onlineCourses(courses);\n' +
-    '    Learn.developProjects(projects);\n' +
-'};\n';
-
-export default (props) => {
-    return (
-        <div id="about">
-            <div className="container">
-                <div className="row">
-                    <h2 className="heading">About Me</h2><br />
-                    <pre id="kode"><code>{code}</code></pre>
-                    <img id="edan" src={EdanAvatar} />
-                    <Pepsi />
+    render() {
+        return (
+            <div id="about" className="fade-in-1s" style={{ background: `url(${splashBackground})`, backgroundSize: 'cover' }}>
+                <div id="about-header">
+                    <h1>Edan Kriss</h1>
+                    <h2>Web Developer</h2>
                 </div>
+                <img id="edan" src={EdanAvatar} />
+                {/* <Pepsi /> */}
+                <div id="about-overlay"></div>
             </div>
-        </div>
-    );
+        );
+    }
 }

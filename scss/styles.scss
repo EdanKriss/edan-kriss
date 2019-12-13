@@ -1,10 +1,4 @@
 /*
-    Description: This file contains all the styles associated with the page
-    that don't come from third party libraries. This file gets compiled using
-    Gulp and send to the /css folder which is then loaded on the page.
-*/
-
-/*
     ------------------------
     ----- 1. Variables -----
     ------------------------
@@ -30,10 +24,6 @@ $text: #74808a;
     ----- 2. Mixins -----
     ---------------------
 */
-
-@mixin transition($duration: 0.5s, $func: ease, $property: all) {
-    transition: #{$duration} #{$func} #{$property};
-}
 
 @mixin placeholder {
     &::-webkit-input-placeholder {
@@ -305,21 +295,6 @@ footer {
     }
 }
 
-.btn-rounded-white {
-    display: inline-block;
-    color: #fff;
-    padding: 15px 25px;
-    border: 3px solid #fff;
-    border-radius: 30px;
-    @include transition();
-
-    // &:hover {
-    //     color: $base-color;
-    //     background: #fff;
-    //     text-decoration: none;
-    // }
-}
-
 .shadow {
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
@@ -355,26 +330,47 @@ footer {
 
 /*
     --------------------------
-    ----- 4. Lead Styles -----
+    ----- 4. About Styles -----
     --------------------------
 */
 
-#lead {
+#about {
     position: relative;
-    height: 100vh;
-    // background: url(../public/images/lead-bg.jpg);
-    // background-size: cover;
+    height: 94vh;
+    border-bottom: 2px solid white;
     padding: 15px;
     overflow: hidden;
+    #edan {
+        position: relative;
+        margin: 12vh auto 4vh auto;
+        max-width: 15rem;
+        border-radius: 100%;
+        z-index: 2;
+    }
+    #pepsi-container {
+        width: auto;
+        display: inline-block;
+        position: absolute;
+        left: 6rem;
+        z-index: 2;
+        #pepsi-note {
+            text-decoration: none;
+            .panel {
+                width: auto;
+                display: inline-block;
+            }
+        }
+    }
 }
 
-#lead-content {
+#about-header {
     position: absolute;
     z-index: 10;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    width: fit-content;
 
     h1, h2 {
         margin: 0;
@@ -398,7 +394,7 @@ footer {
     }
 }
 
-#lead-overlay {
+#about-overlay {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -409,6 +405,31 @@ footer {
     background: rgba(40,140,247, 0.6);
     // background: rgba($base-color-hover, 0.8);
     z-index: 1;
+}
+
+.hexagon {
+    position: relative;
+    width: 100px; 
+    height: 57.74px;
+    background-color: #64C7CC;
+    margin: 28.87px 0;
+}
+.hexagon:before,
+.hexagon:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+}
+.hexagon:before { 
+    bottom: 100%;
+    border-bottom: 28.87px solid #64C7CC;
+}
+.hexagon:after {
+    top: 100%;
+    width: 0;
+    border-top: 28.87px solid #64C7CC;
 }
 
 #lead-down {
@@ -456,52 +477,6 @@ footer {
 
     100% {
         transform: scale(1, 1);
-    }
-}
-
-/*
-    ---------------------------
-    ----- 5. About Styles -----
-    ---------------------------
-*/
-
-#about {
-    background-color: #f2f2f5;
-    text-align: center;
-    padding: 75px 15px;
-    border-bottom: 1px solid $border;
-    min-height: 94vh;
-    #kode {
-        display: inline-block;
-        border: 0;
-        background-color: #fff;
-    }
-    h2 {
-        padding-top: 6rem;
-        color: $heading;
-    }
-    p {
-        // color: $text;
-        margin: 0;
-    }
-    #edan {
-        position: absolute;
-        right: 6rem;
-        max-width: 15rem;
-        border-radius: 100%;
-    }
-    #pepsi-container {
-        width: auto;
-        display: inline-block;
-        position: absolute;
-        left: 6rem;
-        #pepsi-note {
-            text-decoration: none;
-            .panel {
-                width: auto;
-                display: inline-block;
-            }
-        }
     }
 }
 
@@ -882,11 +857,9 @@ footer {
         margin-bottom: 10px;
         background: darken($base-color, 15%);
         color: #fff;
-        @include transition();
         @include placeholder {
             color: #fff;
         }
-
         &:focus {
             outline: none;
             background: darken($base-color, 25%);
@@ -908,7 +881,6 @@ footer {
         color: $base-color;
         font-weight: 700;
         box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-        @include transition();
 
         &:hover {
             box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
@@ -1002,38 +974,23 @@ footer {
         position: relative;
     }
 
-    #about #edan {
-        display: block;
-        position: relative;
-        margin: auto;
+    #about {
+        height: 94vh;
+        #about-header {
+            position: relative;
+            transform: unset;
+            top: unset;
+            left: unset;
+            margin: 8vh auto 4vh auto;
+        }
+        #edan {
+            margin: 8vh auto 4vh auto;
+        }
     }
-
 }
 
 // Medium Devices
 @media only screen and (max-width : 992px) {
-
-    // #lead {
-    //     height: auto;
-    //     min-height: auto;
-    //     max-height: auto;
-    //     padding: 100px 15px;
-    // }
-
-    // #lead-content {
-    //     position: relative;
-    //     transform: none;
-    //     left: auto;
-    //     top: auto;
-
-    //     h1 {
-    //         font-size: 3em;
-    //     }
-
-    //     h2 {
-    //         font-size: 1.75em;
-    //     }
-    // }
 
     #about {
         text-align: center;
@@ -1053,40 +1010,9 @@ footer {
 // Small Devices
 @media only screen and (max-width : 768px) {
 
-    // header {
-    //     position: fixed;
-    //     display: none;
-    //     z-index: 999;
-    //     animation: none;
-    //     bottom: 0;
-    //     height: 100%;
-    // }
-
-    // #mobile-menu-open, #mobile-menu-close {
-    //     display: block;
-    // }
-
     #menu {
         font-size: 1.7rem;
-    }
-
-    #lead-content {
-        h1 {
-            font-size: 2em;
-        }
-
-        h2 {
-            font-size: 1.3em;
-        }
-
-        div {
-            padding: 10px 20px;
-        }
-    }
-
-    #about #edan {
-        right: 0;
-        margin-bottom: 2rem;
+        padding: 2px 10px;
     }
 
     .education-block {
@@ -1123,29 +1049,15 @@ footer {
 // Extra Small Devices
 @media only screen and (max-width : 440px) {
 
-    #lead {
-        height: 90vh;
-        #lead-content {
-            width: 80vw;
-            div {
-                font-size: 0.75em;
-                padding: 5px 10px;
-            }
-        }
-    }
-
     #menu {
         font-size: 1.4rem;
     }
-
     #about {
-        h2 {
-            padding-top: 0;
-        }
-        #kode {
-            font-size: 10px;
+        #about-header {
+            font-size: smaller;
         }
     }
+
     #experience-timeline .course {
         padding-right: 5px;
         padding-left: 5px;

@@ -5,15 +5,8 @@ export default class Footer extends Component {
         console.log("footer did mount");
         const footer = document.getElementById('footer');
         footer.addEventListener('animationend', (event) => {
-            console.debug(event, 'FOOTER animationend event: '+new Date().toTimeString());
             if (event.animationName === 'fadeIn') {
-                if (
-                    footer.classList.contains('fade-in-dot7s') ||
-                    footer.classList.contains('fade-in-1s') ||
-                    footer.classList.contains('fade-in-1dot5s')
-                ) {
-                    footer.classList.remove('fade-in-dot7s');
-                    footer.classList.remove('fade-in-1s');
+                if (footer.classList.contains('fade-in-1dot5s')) {
                     footer.classList.remove('fade-in-1dot5s');
                 }
             }

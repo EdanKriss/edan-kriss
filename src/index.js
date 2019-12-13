@@ -13,9 +13,9 @@ require('../libs/bootstrap.min.js');
 import '../libs/font-awesome/css/font-awesome.min.css';
 
 import '../scss/styles.scss';
-import '../css/anim.css';
+
+import '../css/pepsi.css';
 import 'file-loader?name=[name].[ext]!../index.html';
-import Splash from "./components/splash";
 import Projects from "./components/projects";
 import Skills from "./components/skills";
 import About from "./components/about";
@@ -25,7 +25,7 @@ import Footer from "./components/footer";
 import reducers from './reducers';
 import '../css/materialdesignicons.min.css';
 import '../css/floatyspace.css';
-import './canvas.js';
+import './floatyspace.js';
 
 const createStoreWithMiddleware = applyMiddleware()(createStore);
 
@@ -41,7 +41,6 @@ window.renderReact = () => {
 						<Route path="/skills" component={Skills} />
 						<Route path="/learning" component={Learning} />
 						<Route path="/about" component={About} />
-						<Route path="/" component={Splash} />
 					</Switch>
 					<Footer />
 				</div>
@@ -61,11 +60,11 @@ space.addEventListener('animationend', (event) => {
 			space.classList.contains('fade-out-1dot5s')
 		) {
 			space.style.display = 'none';
-			window.scrollTo({ top: 0, left: 0 });
-			window.renderReact();
 			space.classList.remove('fade-out-dot7s');
 			space.classList.remove('fade-out-1s');
 			space.classList.remove('fade-out-1dot5s');
+			window.scrollTo({ top: 0, left: 0 });
+			window.renderReact();
 		}
 	}
 });
