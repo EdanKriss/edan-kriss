@@ -391,7 +391,7 @@ footer {
     width: 0;
     border-top: 28.87px solid #64C7CC;
 }
-#hexagon-header {
+.hexagon-header {
     z-index: 2;
     position: relative;
     h5 {
@@ -712,12 +712,21 @@ footer {
         font-size: 1.4rem;
     }
     #about {
-        height: 88vh;
+        height: 86vh;
         #about-header {
             font-size: smaller;
         }
     }
     .project-image img {
         max-width: 120px;
+    }
+}
+
+// about screen word collapse at this breakpoint
+@media only screen and (max-width : 409px) {
+    .hexagon-header {
+        h5 {
+            font-size: 2em;
+        }
     }
 }

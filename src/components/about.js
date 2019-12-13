@@ -40,7 +40,7 @@ export default class About extends Component {
                             <div className={`hexagon flip-in-x-1dot5s`} style={{animationDelay: `${index*0.3+0.5}s`}}>
                                 <i className={`${value.iconClassName}`}></i>
                             </div>
-                            <div id="hexagon-header">
+                            <div className="hexagon-header">
                                 <h5>Web Developer</h5>
                                 <h6>Learning them dat gum animations</h6>
                             </div>
