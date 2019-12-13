@@ -289,7 +289,6 @@ footer {
     overflow: hidden;
     #edan {
         position: relative;
-        margin: 12vh auto 4vh auto;
         max-width: 15rem;
         border-radius: 100%;
         z-index: 2;
@@ -311,18 +310,22 @@ footer {
 }
 
 #about-header {
-    position: absolute;
+    // position: absolute;
     z-index: 10;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
+    // text-align: center;
     width: fit-content;
+    position: relative;
+    // transform: unset;
+    // top: unset;
+    // left: unset;
+    margin: 10vh auto 4vh auto;
 
     h1, h2 {
         margin: 0;
     }
-
     h1 {
         color: #fff;
         font-weight: 900;
@@ -331,7 +334,6 @@ footer {
         letter-spacing: 0.05em;
         line-height: 0.9em;
     }
-
     h2 {
         color: #8adffe;
         // color: lighten($base-color, 25%);
@@ -355,11 +357,22 @@ footer {
 }
 
 .hexagon {
+    z-index: 2;
+    display: inline-flex;
     position: relative;
     width: 100px; 
     height: 57.74px;
     background-color: #64C7CC;
     margin: 28.87px 0;
+    i {
+        position: absolute;
+        // top: 20px;
+        font-size: 40pt;
+        color: #fff;
+        left: 0;
+        right: 0;
+        z-index: 1;
+    }
 }
 .hexagon:before,
 .hexagon:after {
@@ -377,6 +390,20 @@ footer {
     top: 100%;
     width: 0;
     border-top: 28.87px solid #64C7CC;
+}
+#hexagon-header {
+    z-index: 2;
+    position: relative;
+    h5 {
+        color: white;
+        font-weight: 500;
+        font-size: 2.25em;
+        margin: 0;
+    }
+    h6 {
+        color: #8adffe;
+        font-weight: 500;
+    }
 }
 
 #lead-down {
@@ -599,14 +626,10 @@ footer {
     #about {
         height: 94vh;
         #about-header {
-            position: relative;
-            transform: unset;
-            top: unset;
-            left: unset;
             margin: 8vh auto 4vh auto;
         }
         #edan {
-            margin: 8vh auto 4vh auto;
+            margin: unset;
         }
         #pepsi-container {
             display: block;
@@ -666,6 +689,24 @@ footer {
 
 // Extra Small Devices
 @media only screen and (max-width : 440px) {
+    .hexagon {
+        width: 80px; 
+        height: 46.19px;
+        i {
+            font-size: 34pt !important;
+        }
+    }
+    .hexagon:before,
+    .hexagon:after {
+      border-left: 40px solid transparent;
+      border-right: 40px solid transparent;
+    }
+    .hexagon:before {
+        border-bottom: 23.09px solid #64C7CC;
+    }
+    .hexagon:after {
+        border-top: 23.09px solid #64C7CC;
+    }
     #menu {
         font-size: 1.4rem;
     }
