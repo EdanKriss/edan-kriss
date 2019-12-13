@@ -637,6 +637,9 @@ footer {
             position: relative;
         }
     }
+    #skills {
+        height: unset;
+    }
 }
 
 // Medium Devices
@@ -712,7 +715,7 @@ footer {
         font-size: 1.4rem;
     }
     #about {
-        height: 82vh;
+        height: 80vh;
         #about-header {
             font-size: smaller;
         }
