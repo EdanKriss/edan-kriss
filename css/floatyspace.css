@@ -305,9 +305,9 @@ section .button:hover .rot360 {
 }
 
 @media screen and (min-width: 600px) {
-    body {
+    /* body {
         font-size: 12pt;
-    }
+    } */
 
     .canvas {
         background: #252934;

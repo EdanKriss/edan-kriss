@@ -403,6 +403,8 @@ footer {
     h6 {
         color: #8adffe;
         font-weight: 500;
+        font-size: 1.5em;
+        height: 4em;
     }
 }
 
@@ -694,22 +696,30 @@ footer {
 // Extra Small Devices
 @media only screen and (max-width : 440px) {
     .hexagon {
-        width: 80px; 
-        height: 46.19px;
+        width: 60px; 
+        height: 34.64px;
         i {
-            font-size: 34pt !important;
+            font-size: 3.2em !important;
         }
     }
     .hexagon:before,
     .hexagon:after {
-      border-left: 40px solid transparent;
-      border-right: 40px solid transparent;
+      border-left: 30px solid transparent;
+      border-right: 30px solid transparent;
     }
     .hexagon:before {
-        border-bottom: 23.09px solid #64C7CC;
+        border-bottom: 17.32px solid #64C7CC;
     }
     .hexagon:after {
-        border-top: 23.09px solid #64C7CC;
+        border-top: 17.32px solid #64C7CC;
+    }
+    .hexagon-header {
+        h5 {
+            font-size: 2em;
+        }
+        h6 {
+            font-size: 1.25em;
+        }
     }
     #menu {
         font-size: 1.4rem;
@@ -725,19 +735,13 @@ footer {
     }
 }
 
-// about screen word collapse at this breakpoint
-@media only screen and (max-width : 409px) {
-    .hexagon-header {
-        h5 {
-            font-size: 2em;
-        }
-    }
-}
-
 // fix viewport size for large screen so the top of the footer is visible at bottom 6vh
 // min-height to prevent vertical height fixing when the viewport isnt tall enough on low-res monitors
 @media only screen and (min-height : 850px) and (min-width : 750px) {
     #about, #skills {
         height: 94vh;
+    }
+    .hexagon-header {
+        scroll-margin-bottom: 1em;
     }
 }

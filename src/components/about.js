@@ -21,15 +21,23 @@ export default class About extends Component {
         const hexagonArray = [
             {
                 iconClassName: "mdi mdi-speedometer",
+                hexagonHeader: "SPEED",
+                hexagonText: "Time-to-market speed must be fast, and so should page load time"
             },
             {
                 iconClassName: "mdi mdi-cellphone-link",
+                hexagonHeader: "REACH",
+                hexagonText: "Cross-platform architecture is difficult. I know how to unify"
             },
             {
                 iconClassName: "mdi mdi-lightbulb-outline",
+                hexagonHeader: "WISDOM",
+                hexagonText: "One must know when to go with bold and innovative, or with old and tested."
             },
             {
-                iconClassName: "mdi mdi-rocket",
+                iconClassName: "mdi mdi-chart-line",
+                hexagonHeader: "GROWTH",
+                hexagonText: "We want our graphs going up and to the right. Back-ends must be structured to scale"
             },
         ];
         return (
@@ -41,8 +49,8 @@ export default class About extends Component {
                                 <i className={`${value.iconClassName}`}></i>
                             </div>
                             <div className="hexagon-header">
-                                <h5>Web Developer</h5>
-                                <h6>Learning them dat gum animations</h6>
+                                <h5>{value.hexagonHeader}</h5>
+                                <h6>{value.hexagonText}</h6>
                             </div>
                         </div>
                     );
