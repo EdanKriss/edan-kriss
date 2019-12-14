@@ -283,7 +283,7 @@ footer {
 
 #about {
     position: relative;
-    height: 94vh;
+    // height: 94vh;
     border-bottom: 2px solid white;
     padding: 15px;
     overflow: hidden;
@@ -530,7 +530,7 @@ footer {
 */
 
 #skills {
-    height: 94vh;
+    // height: 94vh;
     padding: 75px 15px;
     text-align: center;
     h2 {
@@ -624,7 +624,7 @@ footer {
 */
 @media only screen and (max-width: 750px) {
     #about {
-        height: 94vh;
+        // height: 94vh;
         #about-header {
             margin: 8vh auto 4vh auto;
         }
@@ -731,5 +731,12 @@ footer {
         h5 {
             font-size: 2em;
         }
+    }
+}
+
+// min-height to prevent verticle height fixing when the viewport isnt tall enough on low-res monitors
+@media only screen and (min-height : 850px) and (max-height : 750px) {
+    #about, #skills {
+        height: 94vh;
     }
 }
