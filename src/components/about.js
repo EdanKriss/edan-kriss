@@ -37,7 +37,7 @@ export default class About extends Component {
             {
                 iconClassName: "mdi mdi-chart-line",
                 hexagonHeader: "GROWTH",
-                hexagonText: "We want our graphs going up and to the right. Back-ends must be structured to scale"
+                hexagonText: "We want our graphs going up and to the right. Back-ends must be scalable"
             },
         ];
         return (
