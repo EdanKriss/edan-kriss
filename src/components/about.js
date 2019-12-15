@@ -61,7 +61,13 @@ export default class About extends Component {
 
     render() {
         return (
-            <div id="about" className="fade-in-1s" style={{ background: `url(${splashBackground})`, backgroundSize: 'cover' }}>
+            <div id="about" 
+                className="fade-in-1s" 
+                // style={{ 
+                //     background: `url(${splashBackground})`, 
+                //     backgroundSize: 'cover' 
+                // }}
+            >
                 <div id="about-overlay"></div>
                 <div id="about-header">
                     <h1>Edan Kriss</h1>

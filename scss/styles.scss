@@ -24,6 +24,7 @@ $text: #74808a;
     ----- 2. Mixins -----
     ---------------------
 */
+@import '~antd/dist/antd.css';
 
 @mixin placeholder {
     &::-webkit-input-placeholder {
@@ -263,7 +264,7 @@ footer {
         content: '';
         top: 100%;
         height: 1px;
-        width: 50px;
+        width: 80%;
         left: 0;
         right: 0;
         margin: 0 auto;
@@ -327,7 +328,7 @@ footer {
         margin: 0;
     }
     h1 {
-        color: #fff;
+        color: black;
         font-weight: 900;
         font-size: 5em;
         text-transform: uppercase;
@@ -335,7 +336,7 @@ footer {
         line-height: 0.9em;
     }
     h2 {
-        color: #8adffe;
+        color: #3498db;
         // color: lighten($base-color, 25%);
         font-weight: 500;
         font-size: 2.25em;
@@ -351,7 +352,8 @@ footer {
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(40,140,247, 0.8);
+    background: rgba(#f2f2f5, 1);
+    // background: rgba(40,140,247, 0.8);
     // background: rgba($base-color-hover, 0.8);
     z-index: 1;
 }
@@ -395,15 +397,16 @@ footer {
     z-index: 2;
     position: relative;
     h5 {
-        color: white;
-        font-weight: 500;
+        color: black;
+        font-weight: 700;
         font-size: 2.25em;
-        margin: 0;
+        margin: 0 0 5px 0;
     }
     h6 {
-        color: #8adffe;
+        color: #455A64;
+        // color: #3498db;
         font-weight: 700;
-        font-size: 1.5em;
+        font-size: 1.3em;
         height: 4em;
     }
 }
@@ -545,14 +548,18 @@ footer {
         padding: 0;
         max-width: 800px;
     }
+    // li {
+    //     display: inline-block;
+    //     margin: 7px;
+    //     padding: 5px 10px;
+    //     color: $heading;
+    //     background: darken($background-alt, 5%);
+    //     list-style: none;
+    //     cursor: default;
+    //     font-size: 1.2em;
+    // }
     li {
-        display: inline-block;
-        margin: 7px;
-        padding: 5px 10px;
-        color: $heading;
-        background: darken($background-alt, 5%);
-        list-style: none;
-        cursor: default;
+        padding: 0.3em;
         font-size: 1.2em;
     }
 }
@@ -744,5 +751,14 @@ footer {
     }
     .hexagon-header {
         scroll-margin-bottom: 1em;
+    }
+}
+
+@media only screen and (min-width : 750px) {
+    .hexagon-header {
+        h6 {
+            width: 50%;
+            margin: auto;
+        }
     }
 }
