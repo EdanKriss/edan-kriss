@@ -44,7 +44,7 @@ export default class About extends Component {
             <div className="row">
                 {hexagonArray.map((value, index)=>{
                     return (
-                        <div className="col-xs-6" key={`hexagon ${index}`}>
+                        <div className="col-xs-6 col-md-3" key={`hexagon ${index}`}>
                             <div className={`hexagon flip-in-x-1dot5s`} style={{animationDelay: `${index*0.3+0.5}s`}}>
                                 <i className={`${value.iconClassName}`}></i>
                             </div>

@@ -745,16 +745,32 @@ footer {
 
 // fix viewport size for large screen so the top of the footer is visible at bottom 6vh
 // min-height to prevent vertical height fixing when the viewport isnt tall enough on low-res monitors
-@media only screen and (min-height : 850px) and (min-width : 750px) {
-    #about, #skills {
-        height: 94vh;
+// @media only screen and (min-height : 850px) and (min-width : 750px) {
+//     #about, #skills {
+//         height: 94vh;
+//     }
+//     .hexagon-header {
+//         scroll-margin-bottom: 1em;
+//     }
+// }
+
+@media only screen and (min-width : 992px) {
+    #about {
+        .row {
+            margin-top: 10vh;
+        }
     }
     .hexagon-header {
-        scroll-margin-bottom: 1em;
+        h6 {
+            height: unset;
+        }
     }
 }
 
 @media only screen and (min-width : 750px) {
+    #about, #skills {
+        height: 94vh;
+    }
     .hexagon-header {
         h6 {
             width: 50%;
