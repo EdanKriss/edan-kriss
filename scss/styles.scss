@@ -285,6 +285,7 @@ footer {
 #about {
     position: relative;
     // height: 94vh;
+    height: calc(var(--vh, 1vh) * 94);
     border-bottom: 2px solid white;
     padding: 15px;
     overflow: hidden;
@@ -365,7 +366,7 @@ footer {
     width: 100px; 
     height: 57.74px;
     background-color: #64C7CC;
-    margin: 28.87px 0;
+    margin: 3em 0;
     i {
         position: absolute;
         // top: 20px;
@@ -417,24 +418,10 @@ footer {
     z-index: 10;
     padding-top: 1vh;
     color: #fff;
-    span {
-        // cursor: pointer;
-        display: block;
-        margin: 0 auto;
-        // width: 35px;
-        // height: 35px;
-        width: 4vh;
-        height: 4vh;
-        border-radius: 50%;
-        border: 3px solid lighten($base-color, 25%);
-        text-align:center;
-    }
     i {
-        font-size: medium;
+        font-size: 3vh;
         animation: pulsate 1.5s ease;
         animation-iteration-count: infinite;
-        padding-top: .6vh;
-        // padding-top: 5px;
     }
 }
 
@@ -444,7 +431,7 @@ footer {
     }
 
     50% {
-        transform: scale(1.2, 1.2);
+        transform: scale(1.5, 1.5);
     }
 
     100% {
@@ -743,17 +730,6 @@ footer {
     }
 }
 
-// fix viewport size for large screen so the top of the footer is visible at bottom 6vh
-// min-height to prevent vertical height fixing when the viewport isnt tall enough on low-res monitors
-// @media only screen and (min-height : 850px) and (min-width : 750px) {
-//     #about, #skills {
-//         height: 94vh;
-//     }
-//     .hexagon-header {
-//         scroll-margin-bottom: 1em;
-//     }
-// }
-
 @media only screen and (min-width : 992px) {
     #about {
         .row {
@@ -767,14 +743,38 @@ footer {
     }
 }
 
+@media only screen and (max-height : 666px) {
+    #about {
+        #edan {
+            max-height: 8em;
+        }
+    }
+    .hexagon {
+        margin: 2em 0;
+    }
+    .hexagon-header {
+        h6 {
+            height: 1.9em;
+        }
+    }
+}
+
 @media only screen and (min-width : 750px) {
     #about, #skills {
         height: 94vh;
+        // height: calc(var(--vh, 1vh) * 94);
     }
     .hexagon-header {
         h6 {
             width: 50%;
             margin: auto;
         }
+    }
+}
+
+// iphone 5 width is 320
+@media only screen and (max-width : 324px) {
+    header #menu {
+        padding: 2px 0
     }
 }

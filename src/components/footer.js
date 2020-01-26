@@ -18,9 +18,7 @@ export default class Footer extends Component {
             <div id="footer" className="fade-in-1dot5s">
                 <div id="contactSpacer">
                     <div id="lead-down">
-                        <span onClick={() => { window.scrollTo({ top: document.body.scrollHeight, left: 0, behavior: "smooth" }); }}>
-                            <i className="fa fa-chevron-down" aria-hidden="true"></i>
-                        </span>
+                        <i className="fa fa-chevron-down" onClick={() => { window.scrollTo({ top: document.body.scrollHeight, left: 0, behavior: "smooth" }); }}></i>
                     </div>
                     <br/><br/><br/>
                 </div>

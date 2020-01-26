@@ -22,22 +22,22 @@ export default class About extends Component {
             {
                 iconClassName: "mdi mdi-speedometer",
                 hexagonHeader: "SPEED",
-                hexagonText: "Time-to-market speed must be fast, and so should page load time"
+                hexagonText: "Time is the primary resource"
             },
             {
                 iconClassName: "mdi mdi-cellphone-link",
                 hexagonHeader: "REACH",
-                hexagonText: "Cross-platform architecture is difficult. I know how to unify"
+                hexagonText: "Default to cross-platform"
             },
             {
                 iconClassName: "mdi mdi-lightbulb-outline",
                 hexagonHeader: "WISDOM",
-                hexagonText: "One must know when to go with bold and innovative, or with old and tested."
+                hexagonText: "Avoid technical debt"
             },
             {
                 iconClassName: "mdi mdi-chart-line",
                 hexagonHeader: "GROWTH",
-                hexagonText: "We want our graphs going up and to the right. Back-ends must be scalable"
+                hexagonText: "Applications must scale"
             },
         ];
         return (

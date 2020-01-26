@@ -8,6 +8,7 @@ module.exports = env => {
   // var kitty = require('relative/path/to/kitty.jpg');
   // then: kitty variable equals https://cdn.com/pictures/{hash}.jpg
   const ASSET_PATH = (env && env.ASSET_PATH) || '/';
+  console.log("ASSET_PATH: ", ASSET_PATH);
 
   const IMG_PATH = "Images";
 
