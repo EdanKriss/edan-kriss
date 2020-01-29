@@ -96,21 +96,26 @@ header {
 
     a {
         display: block;
-        color: $base-color;
+        // color: $base-color;
         padding: 10px;
         font-weight: 800;
 
-        &:hover {
+        &.activeRoute {
             color: $base-color-hover;
             text-decoration: none;
             background: #eee;
             border-radius: 4px;
         }
 
-        &:focus {
-            color: $base-color;
-            text-decoration: none;
-        }
+        // &:hover {
+            // color: $base-color-hover;
+            // text-decoration: underline;
+        // }
+
+        // &:focus {
+        //     color: $base-color;
+        //     text-decoration: none;
+        // }
     }
 
     &.active {
@@ -124,7 +129,9 @@ header {
 }
 
 #menu {
+    background-color: $base-color;
     font-size: 2rem;
+    width: 99vw;
     &.active {
         display: block;
     }
@@ -258,7 +265,6 @@ footer {
     display: inline-block;
     font-size: 4rem;
     font-weight: 300;
-    margin: 0 0 30px 0;
     &:after {
         position: absolute;
         content: '';
@@ -446,14 +452,12 @@ footer {
 */
 
 #projects {
-    padding: 50px 15px;
+    padding: 18% 15px 10% 15px;
     border-bottom: 1px solid $border;
     text-align: center;
-    padding-top: 12rem;
 
     h2 {
         color: $heading;
-        margin-bottom: 50px;
     }
     #project-note {
         text-decoration: none;
@@ -522,8 +526,7 @@ footer {
 */
 
 #skills {
-    // height: 94vh;
-    padding: 75px 15px;
+    padding: 18% 15px 10% 15px;
     text-align: center;
     h2 {
         color: $heading;
@@ -763,6 +766,10 @@ footer {
         // height: 94vh;
         // height: calc(var(--vh, 1vh) * 94);
     // }
+    #projects, #skills {
+        padding-top: 10%;
+        min-height: 94vh;
+    }
     .hexagon-header {
         h6 {
             width: 50%;

@@ -74,6 +74,7 @@ function floatySpace() {
   space.play();
 }
 window.history.pushState(null, '', '/');
+window.dispatchEvent(new Event('popstate'));
 floatySpace();
 const floatyspace = document.getElementById('floatyspace');
 // space.style.display = 'flex';

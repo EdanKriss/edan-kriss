@@ -27,6 +27,7 @@
                   class="button page-link pop-in-1s delay-2dot5s" 
                   onclick="(()=>{
                     window.history.pushState(null, '', '/about');
+                    window.dispatchEvent(new Event('popstate'));
                     const space = document.getElementById('floatyspace');
                     space.classList.add('fade-out-dot7s');
                     document.body.style.overflowY = 'scroll';
@@ -38,6 +39,7 @@
                   class="button page-link pop-in-1dot3s delay-2dot5s" 
                   onclick="(()=>{
                     window.history.pushState(null, '', '/contact');
+                    window.dispatchEvent(new Event('popstate'));
                     const space = document.getElementById('floatyspace');
                     space.classList.add('fade-out-dot7s');
                     document.body.style.overflowY = 'scroll';
@@ -56,7 +58,7 @@
     }
 
     calculateActualViewportHightUnit();
-    
+
     window.addEventListener('resize', () => {
       calculateActualViewportHightUnit();
       let vh = window.innerHeight * 0.01;

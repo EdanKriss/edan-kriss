@@ -4,7 +4,6 @@ import { Tag } from 'antd';
 export default (props) => {
     return (
         <div id="skills">
-            <div style={{height: "6rem"}}></div>
             <h2 className="heading">Core Technologies</h2>
             <ul>
                 {/* <li className="flip-in-x-2s">JavaScript</li>
