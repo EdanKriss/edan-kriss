@@ -46,7 +46,7 @@ class Projects extends Component {
                         </a>
                     </div>
                 </div>
-                <br/><br/>
+                <br/>
 
                 <div className="container">
                     <div className="row">

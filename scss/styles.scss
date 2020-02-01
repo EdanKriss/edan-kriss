@@ -722,6 +722,7 @@ footer {
         font-size: 1.4rem;
     }
     #about {
+        font-size: 8pt;
         #about-header {
             font-size: smaller;
         }
@@ -768,7 +769,13 @@ footer {
     // }
     #projects, #skills {
         padding-top: 10%;
+        padding-bottom: 0;
         min-height: 94vh;
+    }
+    #skills {
+        li {
+            font-size: 1.5em;
+        }
     }
     .hexagon-header {
         h6 {
