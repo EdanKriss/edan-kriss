@@ -445,6 +445,12 @@ footer {
     }
 }
 
+@keyframes grow {
+    100% {
+        transform: scale(0.8);
+    }
+}
+
 /*
     -------------------------------
     ----- 8. Project Styles -----
@@ -465,6 +471,34 @@ footer {
             width: 900px;
             display: inline-block;
         }
+    }
+    .view-project-circle {
+        position: absolute;
+        margin: auto;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 3;
+        opacity: 0;
+        transform: scale(0.3);
+        // transition: all 0.15 ease-out;
+    }
+    .project-overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        opacity: 0;
+        background-color: grey;
+    }
+    .project:hover > .project-overlay {
+        opacity: 0.5;
+    }
+    .project:hover > .view-project-circle {
+        opacity: 1;
+        animation: grow 0.4s ease-out;
+        animation-fill-mode: forwards;
     }
 }
 
