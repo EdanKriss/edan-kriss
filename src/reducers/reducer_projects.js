@@ -1,14 +1,22 @@
 const result = [
     {
-        projectLink: "http://poly-dash.herokuapp.com",
+        projectLink: "https://poly-dash.herokuapp.com",
         projectImg: "projects/appLogo.png",
         projectName: "Demo Dashboard",
-        projectInfo: `After a few years developing in the healthcare and billing spheres, it became apparent that most engagements require a browser-based dashboard for visualizing data and performing business functions.`
+        projectInfo: `After a few years developing solutions in the healthcare and billing spheres, it became apparent that most engagements require a browser-based dashboard for visualizing data and performing business functions.`
             + `\n\nDashboards generally share a similar set of components, composed according to the underlying business logic.`
             + `\n\nThis demo dashboard serves as a representation of components I have ready to package into a front end dashboard (or any other use case).`
     },
     {
-        projectLink: "http://fattys-list.herokuapp.com",
+        projectLink: "tiny-recipes",
+        projectImg: "projects/appLogo.png",
+        projectName: "Tiny Recipes",
+        projectInfo: `After a few years developing solutions in the healthcare and billing spheres, it became apparent that most engagements require a browser-based dashboard for visualizing data and performing business functions.`
+            + `\n\nDashboards generally share a similar set of components, composed according to the underlying business logic.`
+            + `\n\nThis demo dashboard serves as a representation of components I have ready to package into a front end dashboard (or any other use case).`
+    },
+    {
+        projectLink: "https://fattys-list.herokuapp.com",
         projectImg: "projects/tent.png",
         projectName: "Fatty's List",
         projectInfo: `This node/express webapp, developed on 'Bash on Ubuntu on Windows' and deployed to Heroku, has one noble goal; to compile a curated list of user-submitted campsites so that the internet 

@@ -41,9 +41,9 @@ class Projects extends Component {
                                 
                                 <div id="collapseNote" className="panel-collapse collapse">
                                     <div className="alert-info">
-                                        <div className="panel-body">My projects are currently hosted on Heroku's non-persistant dynos.
-                                            <br/>Initial page load may exceed 5 seconds!
-                                            <br/>Feedback is greatly appreciated!
+                                        <div className="panel-body">My projects are currently hosted on one of several cloud provider's free tier, non-persistant servers.
+                                            <br/><br/>Initial page load may exceed 5 seconds!
+                                            <br/><br/>Click/Tap a project to see a live demo, if available.
                                         </div>
                                     </div>
                                 </div>
