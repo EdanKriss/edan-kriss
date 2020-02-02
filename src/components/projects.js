@@ -4,6 +4,10 @@ import { connect } from 'react-redux';
 import ProjectCard from "./project-card.js";
 
 class Projects extends Component {
+    state = {
+        noteCollapsed: true
+    }
+
     renderProjects() {
         return this.props.projects.map((project, index) => {
             return (
@@ -20,6 +24,7 @@ class Projects extends Component {
     }
 
     render() {
+        const noteIconClass = this.state.noteCollapsed ? "glyphicon-menu-down" : "glyphicon-menu-up";
         return (
             <div id="projects" className="background-alt">
                 <h2 className="heading">Projects</h2>
@@ -27,11 +32,11 @@ class Projects extends Component {
 
                 <div className="container">
                     <div className="row">
-                        <a id="project-note" data-toggle="collapse" href="#collapseNote">
+                        <a id="project-note" data-toggle="collapse" href="#collapseNote" onClick={()=>{this.setState({noteCollapsed:!this.state.noteCollapsed})}}>
                             <div className="panel panel-info">
                                 <div className="panel-heading">
                                     <h4 className="panel-title">Note Regarding Projects</h4>
-                                    <span className="glyphicon glyphicon-menu-down"></span>
+                                    <span className={`glyphicon ${noteIconClass}`}></span>
                                 </div>
                                 
                                 <div id="collapseNote" className="panel-collapse collapse">
