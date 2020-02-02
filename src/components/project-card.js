@@ -19,7 +19,7 @@ export default (props) => {
             </div>
             <div className="project-info">
                 <h3>{props.projectName}</h3>
-                <p>{props.projectInfo}</p>
+                <p style={{whiteSpace: "pre-line"}}>{props.projectInfo}</p>
                 {/* <span 
                     className="linkNewTab"
                     onClick={()=>{window.open(props.projectLink)}}
