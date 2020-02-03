@@ -833,7 +833,7 @@ footer {
     }
 }
 
-@media only screen and (max-device-pixel-ratio: 1.8) {
+@media only screen and (-webkit-max-device-pixel-ratio: 1.8) {
     #about {
         .row {
             font-size: small;
