@@ -827,9 +827,19 @@ footer {
 }
 
 // iphone 5 width is 320
-@media only screen and (max-width : 324px) {
+@media only screen and (max-device-width : 324px) {
     header #menu {
-        padding: 2px 0
+        padding: 2px 0;
+        font-size: small;
+        a {
+            padding: 8px;
+        }
+    }
+    #about {
+        height: unset;
+        #about-header {
+            font-size: 7px;
+        }
     }
 }
 
