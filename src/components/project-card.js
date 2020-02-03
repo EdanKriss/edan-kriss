@@ -24,7 +24,7 @@ export default class ProjectCard extends Component {
     renderModal = () => {
         const projectLink = this.props.projectLink;
         if (projectLink === "tiny-recipes") {
-            return <TinyRecipesModal visible={this.state.modalVisible} title="dollar" toggleVisibility={this.setVisibilty} />;
+            return <TinyRecipesModal visible={this.state.modalVisible} title="Tiny Recipes - Mobile App" toggleVisibility={this.setVisibilty} />;
         } else {
             return null;
         }

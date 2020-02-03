@@ -764,6 +764,13 @@ footer {
     .project-image img {
         max-width: 120px;
     }
+    .tiny-recipes-screenshot {
+        top: 50%;
+        width: 100%;
+        height: unset;
+        position: relative;
+        transform: translateY(-50%);
+    }
 }
 
 @media only screen and (min-width : 992px) {
@@ -823,5 +830,13 @@ footer {
 @media only screen and (max-width : 324px) {
     header #menu {
         padding: 2px 0
+    }
+}
+
+@media only screen and (max-device-pixel-ratio: 1.8) {
+    #about {
+        .row {
+            font-size: small;
+        }
     }
 }

@@ -9,7 +9,7 @@ const result = [
     },
     {
         projectLink: "tiny-recipes",
-        projectImg: "projects/appLogo.png",
+        projectImg: "projects/tiny-recipes/flutter_icon.png",
         projectName: "Tiny Recipes",
         projectInfo: `After a few years developing solutions in the healthcare and billing spheres, it became apparent that most engagements require a browser-based dashboard for visualizing data and performing business functions.`
             + `\n\nDashboards generally share a similar set of components, composed according to the underlying business logic.`
