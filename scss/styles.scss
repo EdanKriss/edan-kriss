@@ -765,7 +765,7 @@ footer {
         max-width: 120px;
     }
     .tiny-recipes-screenshot {
-        top: 50%;
+        // top: 50%;
         width: 100%;
         height: unset;
         position: relative;
@@ -847,6 +847,13 @@ footer {
     #about {
         .row {
             font-size: small;
+        }
+    }
+}
+@media only screen and (-webkit-max-device-pixel-ratio: 1.1) {
+    #about {
+        .row {
+            font-size: x-small;
         }
     }
 }

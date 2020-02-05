@@ -11,6 +11,7 @@ export default (props) => {
             footer={null}
             visible={props.visible}
             onCancel={props.toggleVisibility}
+            width={"90vw"}
         >
             <GridWithTitles />
         </Modal>
