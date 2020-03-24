@@ -15,6 +15,15 @@ const result = [
             + `\n\nDashboards generally share a similar set of components, composed according to the underlying business logic.`
             + `\n\nThis demo dashboard serves as a representation of components I have ready to package into a front end dashboard (or any other use case).`
     },
+    
+    {
+        projectLink: "https://tank-creep.herokuapp.com",
+        projectImg: "projects/tank-victory.png",
+        projectName: "Tank Creep",
+        projectInfo: `After a few years developing solutions in the healthcare and billing spheres, it became apparent that most engagements require a browser-based dashboard for visualizing data and performing business functions.`
+            + `\n\nDashboards generally share a similar set of components, composed according to the underlying business logic.`
+            + `\n\nThis demo dashboard serves as a representation of components I have ready to package into a front end dashboard (or any other use case).`
+    },
     {
         projectLink: "https://fattys-list.herokuapp.com",
         projectImg: "projects/tent.png",

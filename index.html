@@ -14,6 +14,20 @@
     <!-- <link rel="stylesheet" href="/css/anim.css"> -->
   </head>
   <body>
+    <script>
+      function calculateActualViewportHightUnit() {
+        let vh = window.innerHeight * 0.01;
+        document.documentElement.style.setProperty('--vh', `${vh}px`);
+      }
+  
+      calculateActualViewportHightUnit();
+  
+      window.addEventListener('resize', () => {
+        calculateActualViewportHightUnit();
+        let vh = window.innerHeight * 0.01;
+        document.documentElement.style.setProperty('--vh', `${vh}px`);
+      });
+    </script>
       <section id="floatyspace" class="flex height-fix" style="visibility: hidden;">
           <div id="pt" class="canvas"></div>
           <div class="flex">
@@ -51,7 +65,7 @@
 
     <div class="holder"></div>
   </body>
-  <script>
+  <!-- <script>
     function calculateActualViewportHightUnit() {
       let vh = window.innerHeight * 0.01;
       document.documentElement.style.setProperty('--vh', `${vh}px`);
@@ -64,6 +78,6 @@
       let vh = window.innerHeight * 0.01;
       document.documentElement.style.setProperty('--vh', `${vh}px`);
     });
-  </script>
+  </script> -->
   <script src="./bundle.js"></script>
 </html>
