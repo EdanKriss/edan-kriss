@@ -9,7 +9,13 @@
     "webpack-cdn": "webpack -p --env.ASSET_PATH=http://localhost:8089/assets/",
     "start": "node server.js",
     "dev": "webpack-dev-server --config ./webpack.config.js --mode development",
-    "dev2": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js"
+    "dev2": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
+    "build-docker-image-from-source": "powershell.exe 'docker build -t tag-edan-kriss .'",
+    "run-docker-image": "powershell.exe 'docker run --name name-edan-kriss -p 8088:8088 -d tag-edan-kriss'",
+    "save-docker-backup-from-image": "powershell.exe 'docker save -o docker_backup_edan_kriss.tar tag-edan-kriss'",
+    "build-docker-image-from-backup": "powershell.exe 'docker load --input ./docker_backup_edan_kriss.tar'",
+    "delete-docker-image": "powershell.exe 'docker image rm tag-edan-kriss'",
+    "delete-docker-container": "powershell.exe 'docker rm -f name-edan-kriss'"
   },
   "author": "Edan Kriss",
   "license": "ISC",
