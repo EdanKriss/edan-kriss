@@ -40,7 +40,7 @@
     "@material-ui/core": "^4.9.1",
     "antd": "^3.26.3",
     "express": "^4.16.2",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "lodash": "^3.10.1",
     "ptjs": "^0.2.4",
     "react": "^16.8.6",
