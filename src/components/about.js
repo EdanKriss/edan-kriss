@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import EdanAvatar from '../../public/images/edan.jpg';
 // import Pepsi from './pepsi';
-import splashBackground from '../../public/images/lead-bg.jpg';
+// import splashBackground from '../../public/images/lead-bg.jpg';
 
 export default class About extends Component {
     componentDidMount() {
