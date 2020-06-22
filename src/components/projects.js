@@ -15,7 +15,14 @@ class Projects extends Component {
                     key={project.projectName}
                     projectName={project.projectName}
                     projectLink={project.projectLink}
-                    projectImg={project.projectImg}
+                    projectImg={
+                        // this check was needed after upgrading file loader
+                        // urlloader defaults to file loader, and when used in combination with the size limit option,
+                        // caused this value to be replaced by a module object with the path set to default property
+                        project.projectImg.hasOwnProperty("default") 
+                        ? project.projectImg.default 
+                        : project.projectImg
+                    }
                     projectInfo={project.projectInfo}
                     index={index}
                 />
