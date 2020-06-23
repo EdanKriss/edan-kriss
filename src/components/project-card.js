@@ -30,7 +30,8 @@ export default class ProjectCard extends Component {
         }
     }
 
-    animationClass = (this.props.index % 2 === 0) ? "slide-in-left-1s" : "slide-in-right-1s";
+    animationClass = "slide-in-left-1s";
+    // animationClass = (this.props.index % 2 === 0) ? "slide-in-left-1s" : "slide-in-right-1s";
     animationDelay = `${this.props.index*0.3+0.5}s`;
 
     render() {
