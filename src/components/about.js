@@ -1,10 +1,31 @@
 import React, { Component } from 'react';
+import { withStyles } from '@material-ui/core/styles';
+import Grid from '@material-ui/core/Grid';
 
 import EdanAvatar from '../../public/images/edan.jpg';
 // import Pepsi from './pepsi';
 // import splashBackground from '../../public/images/lead-bg.jpg';
 
-export default class About extends Component {
+const styles = theme => ({
+    root: {
+        minHeight: "100%",
+    },
+    header: {
+        marginTop: "12rem",
+        [theme.breakpoints.down('sm')]: {
+            marginTop: "8rem",
+        },
+    },
+    body: {
+        width: "100vw",
+        minHeight: "53vh",
+        [theme.breakpoints.down('sm')]: {
+            minHeight: "70vh",
+        },
+    }
+});
+
+class About extends Component {
     componentDidMount() {
         console.log("About did mount");
         const about = document.getElementById('about');
@@ -60,6 +81,7 @@ export default class About extends Component {
     }
 
     render() {
+        const { classes } = this.props;
         return (
             <div id="about" 
                 className="fade-in-1s" 
@@ -69,14 +91,40 @@ export default class About extends Component {
                 // }}
             >
                 <div id="about-overlay"></div>
-                <div id="about-header">
-                    <h1>Edan Kriss</h1>
-                    <h2>Web Developer</h2>
-                </div>
-                <img id="edan" src={EdanAvatar} />
-                <this.buildHexagons />
+                <Grid
+                    container
+                    // justify="center"
+                    alignItems="center"
+                    direction={"column"}
+                    className={classes.root}
+                >
+                    <Grid item className={classes.header}>
+                        <div id="about-header">
+                            <h1>Edan Kriss</h1>
+                            <h2>Web Developer</h2>
+                        </div>
+                    </Grid>
+                    <Grid item className={classes.body}>
+                        <Grid
+                            justify="center"
+                            alignItems="center"
+                            container
+                            spacing={0}
+                            className={classes.body}
+                        >
+                            <Grid item md={3}>
+                                <img id="edan" src={EdanAvatar} />
+                            </Grid>
+                            <Grid item md={8}>
+                                <this.buildHexagons />
+                            </Grid>
+                        </Grid>
+                    </Grid>
+                </Grid>
                 {/* <Pepsi /> */}
             </div>
         );
     }
 }
+
+export default withStyles(styles, { withTheme: true })(About);

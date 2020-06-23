@@ -26,13 +26,7 @@ export default class Nav extends Component {
     render() {
         return (
             <div>
-                <div id="mobile-menu-open" className="shadow-large">
-                    <i className="fa fa-bars" aria-hidden="true"></i>
-                </div>
-                <header>
-                    <div id="mobile-menu-close">
-                        <span>Close</span> <i className="fa fa-times" aria-hidden="true"></i>
-                    </div>
+                <header id="menu-container">
                     <ul id="menu" className="shadow">
                         <li>
                             {/* <Link to="/">Home</Link> */}
