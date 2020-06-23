@@ -20,7 +20,7 @@ const styles = theme => ({
         width: "100vw",
         minHeight: "53vh",
         [theme.breakpoints.down('sm')]: {
-            minHeight: "70vh",
+            minHeight: "65vh",
         },
     }
 });

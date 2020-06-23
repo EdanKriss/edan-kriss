@@ -630,7 +630,7 @@ body {
 }
 
 // Medium Devices
-@media only screen and (max-width : 992px) {
+@media only screen and (max-width : 991px) {
     #about {
         text-align: center;
         font-size: 8pt;
@@ -729,9 +729,12 @@ body {
     }
 }
 
-@media only screen and (min-width : 992px) {
+@media only screen and (min-width : 991px) {
     #about {
         height: 94vh;
+        #edan {
+            margin-top: 10rem;
+        }
         .row {
             margin-top: 10vh;
         }
