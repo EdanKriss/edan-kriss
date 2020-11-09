@@ -8,6 +8,14 @@ const result = [
             + `\n\nIt is critical for any project to be able to quickly develop any public facing pages that allow a user to change their settings, and internal application dashboards for performing administrative tasks.`
     },
     {
+        projectLink: "blood-oxygen",
+        projectImg: "projects/blood-oxygen/blood_o2.png",
+        projectName: "Blood Oxygen Sensor",
+        projectInfo: `With Covid 19 prompting us to rethink our approach to health, I decided to take the opportunity to try something new: embedded programming.`
+            + `\n\nBlood oxygen seems to be a particularly important first line metric to monitor if you are infected with covid, but consumer devices like the Apple Watch, are expensive.`
+            + `\n\nI managed to perform enough online research to create a cheap blood oxygen sensor. The sensor itself is medical grade, but it did not come with an algorithm, which are proprietary. Fortunately, a few open-source algorithms exist that could be dumbed down enough to run on an arduino.`
+    },
+    {
         projectLink: "tiny-recipes",
         projectImg: "projects/tiny-recipes/flutter_icon.png",
         projectName: "Tiny Recipes",

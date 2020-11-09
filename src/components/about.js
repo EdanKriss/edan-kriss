@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 
-import EdanAvatar from '../../public/images/edan.jpg';
+import EdanAvatar from '../../public/images/edan_grey_suit.jpg';
+// import EdanAvatar from '../../public/images/edan.jpg';
 // import Pepsi from './pepsi';
 // import splashBackground from '../../public/images/lead-bg.jpg';
 
@@ -48,7 +49,7 @@ class About extends Component {
             {
                 iconClassName: "mdi mdi-cellphone-link",
                 hexagonHeader: "REACH",
-                hexagonText: "Default to cross-platform"
+                hexagonText: "Cross-platform is my default"
             },
             {
                 iconClassName: "mdi mdi-lightbulb-outline",

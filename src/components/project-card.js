@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import ViewProjectCircle from '../../public/images/projects/view_project_circle.png';
-import { TinyRecipesModal } from './modals';
+import { TinyRecipesModal, BloodOxygenModal } from './modals';
 
 export default class ProjectCard extends Component {
     state = {
@@ -25,6 +25,8 @@ export default class ProjectCard extends Component {
         const projectLink = this.props.projectLink;
         if (projectLink === "tiny-recipes") {
             return <TinyRecipesModal visible={this.state.modalVisible} title="Tiny Recipes - Mobile App" toggleVisibility={this.setVisibilty} />;
+        } else if (projectLink === "blood-oxygen") {
+            return <BloodOxygenModal visible={this.state.modalVisible} title="Embedded Blood Oxygen Sensor" toggleVisibility={this.setVisibilty} />;
         } else {
             return null;
         }

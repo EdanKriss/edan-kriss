@@ -4,6 +4,12 @@ import GridListTile from '@material-ui/core/GridListTile';
 import GridListTileBar from '@material-ui/core/GridListTileBar';
 import { withStyles } from '@material-ui/core';
 
+import loginImg from 'Images/projects/tiny-recipes/login.png';
+import recipeListImg from 'Images/projects/tiny-recipes/recipe_list.png';
+import permissionImg from 'Images/projects/tiny-recipes/device_permission.png';
+import photoPickerImg from 'Images/projects/tiny-recipes/photo_picker.png';
+import photoCompressionImg from 'Images/projects/tiny-recipes/test_compression.png';
+
 const rootStyle = (
     window.innerWidth > 440 && 
     (window.innerWidth > window.innerHeight)
@@ -32,31 +38,31 @@ const TileBar = withStyles({
 
 const tileData = [
     {
-      img: require('Images/projects/tiny-recipes/login.png'),
+      img: loginImg,
       title: 'Login Page',
       text: 'Passwords are hashed and stored in MongoDB',
       cols: .66,
     },
     {
-      img: require('Images/projects/tiny-recipes/recipe_list.png'),
+      img: recipeListImg,
       title: 'Recipe List',
       text: 'Our data model revolves around recipes!',
       cols: .66,
     },
     {
-      img: require('Images/projects/tiny-recipes/device_permission.png'),
+      img: permissionImg,
       title: 'Platform-agnostic code',
       text: 'Flutter widgets dont care what the device is',
       cols: .67,
     },
     {
-      img: require('Images/projects/tiny-recipes/photo_picker.png'),
+      img: photoPickerImg,
       title: 'Image picker',
       text: 'High level API for common tasks',
       cols: .66,
     },
     {
-      img: require('Images/projects/tiny-recipes/test_compression.png'),
+      img: photoCompressionImg,
       title: 'Testing compression',
       text: 'Notice the poor color of some libraries.',
       cols: .66,

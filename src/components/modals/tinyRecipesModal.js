@@ -17,9 +17,9 @@ export default (props) => {
                 textAlign: "center"
             }}
         >
-            {/* <GridWithTitles />
+            <GridWithTitles />
 
-            <div>
+            {/* <div>
                 <span>
                     <h1>Technologies:</h1>
                     <ul style={{width:"fit-content",margin:"auto"}}>
@@ -39,7 +39,7 @@ export default (props) => {
                         <li>Custom session management</li>
                     </ul>
                 </span>
-            </div> */}
+            </div>  */}
         </Modal>
     );
 }
